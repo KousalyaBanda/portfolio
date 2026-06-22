@@ -161,31 +161,45 @@ color:#94a3b8;
 
 }
 .skills{
-
-padding:100px;
-
+    padding:100px 10%;
 }
 
 .skills h1{
-
-text-align:center;
-
-font-size:50px;
-
-color:#38bdf8;
-
-margin-bottom:50px;
-
+    text-align:center;
+    font-size:60px;
+    color:#38bdf8;
+    margin-bottom:60px;
 }
 
-.skill-box{
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
 
-display:grid;
+.skill-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:25px;
+    transition:0.5s;
+    border:1px solid rgba(255,255,255,0.05);
+}
 
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px #38bdf8;
+}
 
-gap:30px;
+.skill-card h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+    font-size:28px;
+}
 
+.skill-card p{
+    color:#d1d5db;
+    font-size:18px;
+    margin:10px 0;
 }
 
 .card{
